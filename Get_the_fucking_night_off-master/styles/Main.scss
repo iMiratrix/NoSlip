@@ -1,0 +1,39 @@
+$aqua: #1cd3a2;
+
+head, body, p, div{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  div {
+    padding: 15px 30px;
+  }
+}
+
+.header {
+  background-color: black;
+  text-align: center;
+
+  p {
+    color: $aqua;
+
+  }
+}
+
+.content {
+  flex: auto;
+  margin: 0 20%;
+  background-color: blue;
+}
+
+.footer {
+  background-color: darkkhaki;
+  margin-top: auto;
+}

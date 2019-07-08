@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Получай ночь ебаная</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img class="graficlogo" src="../img/image.png" width="200" alt=""></a>
+         <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="">RECORDS</a>
+                <a href="">MY PROFILE</a>
+                <a href="">FORUM</a>
+                <a href="">ABOUT US</a>
+                <a id="menu" href="#" class="icon">&#9776;</a>
+            </div>
+         </nav>
+    </div>
+
+
+</header>
+
+<script language="JavaScript">
+    <!--//
+    startday = new Date();
+    clockStart = startday.getTime();
+
+    function initStopwatch() {
+        var myTime = new Date();
+        var timeNow = myTime.getTime();
+        var timeDiff = timeNow - clockStart;
+        this.diffSecs = timeDiff/1000;
+        return(this.diffSecs); }
+
+    function getSecs() {
+        var mySecs = initStopwatch();
+        var mySecs1 = ""+mySecs;
+        mySecs1= mySecs1.substring(0,mySecs1.indexOf(".")) + " сек.";
+        document.forms[0].timespent.value = mySecs1
+        window.setTimeout('getSecs()',1000); }
+    // -->
+</script>
+
+<div class="content jumbotron">
+    <body onload="window.setTimeout('getSecs()',1)">
+    <form><div>Вы не спите <input type="text" size="20" name="timespent" onfocus="this.blur()" style="font-family: sans-serif; text-align: left; background-color: rgb(22,28,34); color: rgb(232,96,238); border: thin"></div></form>
+    </body>
+</div>
+
+
+
+<div class="footer text-right">
+
+    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+    <a href="">donate</a>
+
+</div>
+
+
+<script src="../libs/jquery/jquery-3.4.1.min.js"></script>
+<script src="../JS/main.js"></script>
+</body>
+</html>
